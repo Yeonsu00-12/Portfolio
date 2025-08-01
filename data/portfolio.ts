@@ -5,6 +5,7 @@ import {
   Award,
   Education,
   NavItem,
+  Qualification,
 } from "@/types";
 
 export const personalInfo: PersonalInfo = {
@@ -27,7 +28,7 @@ React, TypeScript, 데이터 시각화 라이브러리에 능숙하며, 현재 T
 export const skills: Skill[] = [
   {
     category: "Frontend",
-    icon: "🎨",
+    icon: "🌐",
     technologies: ["Next.js", "React", "TypeScript", "JavaScript"],
   },
   {
@@ -38,7 +39,7 @@ export const skills: Skill[] = [
   {
     category: "상태 관리",
     icon: "⚡",
-    technologies: ["Redux", "Zustand", "Recoil", "TanStack Query"],
+    technologies: [ "Zustand", "Recoil", "TanStack Query"],
   },
   {
     category: "데이터 시각화",
@@ -46,14 +47,27 @@ export const skills: Skill[] = [
     technologies: ["ECharts", "D3.js", "ApexCharts"],
   },
   {
-    category: "백엔드 & 데이터베이스",
+    category: "데이터베이스",
     icon: "🔧",
-    technologies: ["FastAPI", "OpenSearch", "MySQL"],
+    technologies: ["OpenSearch", "MySQL"],
   },
   {
     category: "배포 & CI/CD",
     icon: "🚀",
-    technologies: ["Vercel", "Argo"],
+    technologies: ["Vercel"],
+  },
+  {
+    category: "협업툴",
+    icon: "🧩",
+    technologies: [
+      "Figma",
+      "Slack",
+      "Confluence",
+      "Jira",
+      "Github",
+      "GitLab",
+      "Google Docs",
+    ],
   },
 ];
 
@@ -369,10 +383,35 @@ export const education: Education[] = [
   },
 ];
 
+export const qualifications: Qualification[] = [
+  {
+    id: "1",
+    icon: "",
+    name: "정보처리기능사",
+    organization: "한국산업인력공단",
+    acquisitionDate: "2018.07.18",
+  },
+  {
+    id: "2",
+    icon: "",
+    name: "ITQ 엑셀",
+    organization: "한국생산성본부",
+    acquisitionDate: "2016.12.29",
+  },
+  {
+    id: "3",
+    icon: "",
+    name: "GTQ그래픽기술자격 1급",
+    organization: "한국생산성본부",
+    acquisitionDate: "2016.07.15",
+  },
+];
+
 export const navItems: NavItem[] = [
   { id: "home", label: "홈", icon: "🏠" },
   { id: "resume", label: "이력서", icon: "📄" },
   { id: "portfolio", label: "포트폴리오", icon: "💼" },
   { id: "awards", label: "수상경력", icon: "🏆" },
   { id: "education", label: "학력", icon: "🎓" },
+  { id: "qualifications", label: "자격증", icon: "🪪" },
 ];

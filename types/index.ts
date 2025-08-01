@@ -55,3 +55,11 @@ export interface NavItem {
   label: string;
   icon: string;
 }
+
+export interface Qualification {
+  id: string;
+  icon: string;
+  name: string;
+  organization: string;
+  acquisitionDate: string;
+}

@@ -8,6 +8,7 @@ import Resume from "./components/Resume";
 import Awards from "./components/Awards";
 import Education from "./components/Education";
 import Portfolio from "./components/Portfolio";
+import Qualification from "./components/Qualification";
 
 export default function Home() {
   const [activeSection, setActiveSection] = useState("home");
@@ -24,6 +25,8 @@ export default function Home() {
         return <Awards />;
       case "education":
         return <Education />;
+      case "qualifications":
+        return <Qualification />;
       default:
         return <Hero />;
     }
