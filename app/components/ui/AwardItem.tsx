@@ -11,10 +11,10 @@ export default function AwardItem({ award }: AwardItemProps) {
   return (
     <motion.div
       whileHover={{ x: 5 }}
-      className="bg-white p-6 rounded-2xl shadow-lg border-l-4 border-yellow-400 hover:shadow-xl transition-all duration-300"
+      className="bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300"
     >
       <div className="flex items-start space-x-4">
-        <span className="text-3xl">{award.icon}</span>
+        {/* <span className="text-3xl">{award.icon}</span> */}
         <div className="flex-1">
           <h3 className="text-xl font-bold text-gray-800 mb-2">
             {award.title}

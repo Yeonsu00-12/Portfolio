@@ -11,10 +11,10 @@ export default function QualificationItem({ qualification }: QualificationItemPr
   return (
     <motion.div
       whileHover={{ x: 5 }}
-      className="bg-white p-6 rounded-2xl shadow-lg border-l-4 border-indigo-500 hover:shadow-xl transition-all duration-300"
+      className="bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300"
     >
       <div className="flex items-center space-x-4">
-        <span className="text-3xl">{qualification.icon}</span>
+        {/* <span className="text-3xl">{qualification.icon}</span> */}
         <div>
           <h3 className="text-xl font-bold text-gray-800">
             {qualification.name}

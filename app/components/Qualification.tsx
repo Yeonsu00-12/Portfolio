@@ -11,7 +11,7 @@ export default function Qualification() {
         <motion.h2
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          className="text-4xl font-bold text-center mb-12 bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent"
+          className="text-2xl font-bold text-left mb-5 bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-[#333333]"
         >
           자격증
         </motion.h2>

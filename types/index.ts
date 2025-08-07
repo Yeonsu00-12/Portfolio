@@ -10,7 +10,7 @@ export interface PersonalInfo {
 export interface Skill {
   category: string;
   icon: string;
-  technologies: string[];
+  technologies: Array<Record<string, string>>;
 }
 
 export interface Achievement {

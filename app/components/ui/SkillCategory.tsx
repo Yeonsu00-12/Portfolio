@@ -9,26 +9,39 @@ interface SkillCategoryProps {
 
 export default function SkillCategory({ skill }: SkillCategoryProps) {
   return (
-    <div className="bg-white p-6 rounded-2xl shadow-lg border-l-4 border-indigo-500 hover:shadow-xl transition-shadow">
+    <div className="bg-white p-6 rounded-2xl shadow-lg border-indigo-500 hover:shadow-xl transition-shadow">
       <div className="flex items-center space-x-3 mb-4">
         <span className="text-2xl">{skill.icon}</span>
-        <h3 className="text-xl font-semibold text-indigo-600">
+        <h3 className="text-xl font-semibold text-[#333333]">
           {skill.category}
         </h3>
       </div>
 
       <div className="flex flex-wrap gap-2">
-        {skill.technologies.map((tech, index) => (
-          <motion.span
-            key={tech}
-            initial={{ opacity: 0, scale: 0.8 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ delay: index * 0.05, duration: 0.3 }}
-            className="px-3 py-1 text-sm font-medium text-white bg-gradient-to-r from-indigo-500 to-purple-600 rounded-full"
-          >
-            {tech}
-          </motion.span>
-        ))}
+        {skill.technologies.map((tech, index) => {
+          const [level, name] = Object.entries(tech)[0]; // 예: ["good", "Next.js"]
+
+          // 레벨별 배경색
+          const bgColor =
+            level === "good"
+              ? "#1E2AD2"
+              : level === "soso"
+              ? "#FFA6B7"
+              : "#FEC163"; // fallback 색상
+
+          return (
+            <motion.span
+              key={`${name}-${index}`}
+              initial={{ opacity: 0, scale: 0.8 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ delay: index * 0.05, duration: 0.3 }}
+              className="px-3 py-1 text-sm font-medium text-white rounded-md"
+              style={{ backgroundColor: bgColor }}
+            >
+              {name}
+            </motion.span>
+          );
+        })}
       </div>
     </div>
   );

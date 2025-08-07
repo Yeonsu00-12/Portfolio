@@ -16,57 +16,46 @@ export const personalInfo: PersonalInfo = {
   github: "https://github.com/Yeonsu00-12",
 
   // ✨ v2 버전 자기소개 적용
-  description: `데이터를 아름다운 시각화로 변환하는 프론트엔드 개발자입니다.
-
-현재 진행 중인 KT bigsight 프로젝트에서 강원도 생활이동 데이터를 실시간으로 시각화하는 플랫폼을 개발하고 있으며, Next.js와 OpenSearch 연동으로 대용량 데이터 처리 성능을 최적화했습니다.
-
-카카오테크 부트캠프 수료생으로 해커톤과 파이널 프로젝트에서 연속 입상하며 빠른 프로토타이핑과 성능 최적화 역량을 검증받았습니다. 특히 U'STOCK 프로젝트에서 달성한 42.4% 성능 개선은 사용자 경험에 대한 저의 관심을 보여줍니다.
-
-React, TypeScript, 데이터 시각화 라이브러리에 능숙하며, 현재 TypeScript 심화 스터디와 AI 기술 스터디를 통해 더 나은 개발자로 성장하고 있습니다.`,
+  description: `안녕하세요! 사용자 경험을 최우선으로 생각하는 프론트엔드 개발자 박연수입니다.`
 };
 
 export const skills: Skill[] = [
   {
     category: "Frontend",
     icon: "🌐",
-    technologies: ["Next.js", "React", "TypeScript", "JavaScript"],
+    technologies: [
+      { good: "Next.js" },
+      { good: "React.js" },
+      { good: "Typescript" },
+      { good: "Javascript" },
+    ],
   },
   {
     category: "CSS & Styling",
     icon: "🎨",
-    technologies: ["Tailwind CSS", "Sass", "Styled-components"],
+    technologies: [{good : "Tailwind CSS"}, { soso : "Sass"}, {good : "Styled-components"}],
   },
   {
     category: "상태 관리",
     icon: "⚡",
-    technologies: [ "Zustand", "Recoil", "TanStack Query"],
+    technologies: [{soso : "Zustand"}, {good : "Recoil"}, {good : "TanStack Query"}],
   },
   {
     category: "데이터 시각화",
     icon: "📊",
-    technologies: ["ECharts", "D3.js", "ApexCharts"],
-  },
-  {
-    category: "데이터베이스",
-    icon: "🔧",
-    technologies: ["OpenSearch", "MySQL"],
-  },
-  {
-    category: "배포 & CI/CD",
-    icon: "🚀",
-    technologies: ["Vercel"],
+    technologies: [{good : "ECharts"}, {study : "D3.js"}, {good : "ApexCharts"}, { soso : "deck.gl"}],
   },
   {
     category: "협업툴",
     icon: "🧩",
     technologies: [
-      "Figma",
-      "Slack",
-      "Confluence",
-      "Jira",
-      "Github",
-      "GitLab",
-      "Google Docs",
+      {good : "Figma"},
+      {good : "Slack"},
+      {good : "Confluence"},
+      {good : "Jira"},
+      {good : "Github"},
+      {good : "GitLab"},
+      {good : "Google Docs"},
     ],
   },
 ];
@@ -85,6 +74,8 @@ export const projects: Project[] = [
         "GIS 기반의 데이터 시각화 플랫폼 구축",
         "Next.js와 clickhouse를 통해 데이터 처리 효율성 극대화",
         "다크 모드 및 반응형 디자인 적용으로 사용자 접근성 강화",
+        "LLM API와의 안정적인 연결 및 데이터 송수신을 위한 프론트엔드 아키텍처 설계 및 구현",
+        "각 페이지별 별도의 세션 관리 및 대화 히스토리 기능을 통해 사용자가 이전 대화 맥락을 쉽게 조회/복원할 수 있도록 개선",
       ],
     },
     techStack: [
@@ -102,10 +93,6 @@ export const projects: Project[] = [
     ],
     links: [
       { label: "🔗 서비스 바로가기", url: "아직 배포 안됨" },
-      {
-        label: "🔗 프로젝트 Jira",
-        url: "https://dsl-dev.atlassian.net/jira/software/projects/BSP/boards/1",
-      },
     ],
     images: [
       "/image/dashboard.png",
@@ -411,7 +398,7 @@ export const navItems: NavItem[] = [
   { id: "home", label: "홈", icon: "🏠" },
   { id: "resume", label: "이력서", icon: "📄" },
   { id: "portfolio", label: "포트폴리오", icon: "💼" },
-  { id: "awards", label: "수상경력", icon: "🏆" },
-  { id: "education", label: "학력", icon: "🎓" },
+  // { id: "awards", label: "학력 & 수상", icon: "🎓" },
+  { id: "education", label: "학력 & 수상", icon: "🎓" },
   { id: "qualifications", label: "자격증", icon: "🪪" },
 ];

@@ -8,13 +8,13 @@ export default function Portfolio() {
   return (
     <section className="py-16 px-8">
       <div className="max-w-6xl mx-auto">
-        <motion.h2
+        {/* <motion.h2
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          className="text-4xl font-bold text-center mb-12 bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent"
+          className="text-4xl font-bold text-center mb-12 bg-clip-text text-[#333333]"
         >
           프로젝트 포트폴리오
-        </motion.h2>
+        </motion.h2> */}
 
         <div className="space-y-8">
           {projects.map((project, index) => (

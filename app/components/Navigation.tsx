@@ -20,10 +20,10 @@ export default function Navigation({
               <button
                 onClick={() => setActiveSection(item.id)}
                 className={`
-                  flex items-center space-x-2 px-4 py-2 rounded-full transition-all duration-300
+                  flex items-center space-x-2 px-4 py-2 transition-all duration-300
                   ${
                     activeSection === item.id
-                      ? "bg-gradient-to-r from-indigo-500 to-purple-600 text-white shadow-lg"
+                      ? "border-b-2 !border-[#BC78EC] font-bold shadow-lg"
                       : "text-gray-700 hover:bg-gray-100"
                   }
                 `}
